@@ -11,6 +11,17 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         $this->publishes([
             self::CONFIG_PATH => config_path('<?php echo $configFileName; ?>.php'),
         ], 'config');
+
+        // $this->loadRoutesFrom(__DIR__.'/routes.php');
+        // $this->loadMigrationsFrom(__DIR__.'/migrations');
+        // $this->loadTranslationsFrom(__DIR__.'/translations', '<?php echo $aliasName; ?>');
+        // $this->loadViewsFrom(__DIR__.'/views', '<?php echo $aliasName; ?>');
+
+        /*
+        $this->publishes([
+        __DIR__.'/path/to/assets' => public_path('vendor/courier'),
+        ], 'public');
+        */
     }
 
     public function register()

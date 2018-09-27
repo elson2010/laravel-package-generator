@@ -23,7 +23,10 @@
   "autoload": {
     "psr-4": {
       "<?php echo $vendor; ?>\\<?php echo $package; ?>\\": "src"
-    }
+    },
+    "files": [
+        "src/helpers.php"
+    ]
   },
   "autoload-dev": {
     "psr-4": {
